@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 8vh;
+}
+
+
+#score{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+    font-size: 40px;
+}
+
+#game-div{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+#game-div>div{
+    border: 2px solid rgb(255, 251, 0);
+    width:  32vw;
+    height: 69vh;
+    font-size: 35px;
+}
+#game-div>img{
+    /* border: 2px solid red; */
+    height: 80vh;
+}
+
+#buttons{
+    /* border: 2px solid red; */
+    /* margin-top: 47vh; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content{
+    /* border: 2px solid red; */
+    height: 48vh;
+}
+.main-content>img{
+    /* border: 2px solid red; */
+    height: 48vh;
+    width: 32vw;
+}
+
+
+/* Add styles for the winner container */
+.winner-container {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Add styles for the winner heading */
+.winner-heading {
+    color: #ff6347;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Add styles for the restart button */
+.restart-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.restart-button:hover {
+    background-color: #45a049;
+}
+
+
+.winner{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 1;
+}
+.winner>h1{
+    font-size: 60px;
+    color: rgb(243, 243, 75);
+    margin-bottom: 20px;
+}
+.winner>button{
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+}
