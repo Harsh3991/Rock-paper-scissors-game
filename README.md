@@ -42,3 +42,7 @@ background-color of rock paper and scissors image is "#ffc434"
 **Iteration 3.5:** When the play again button is clicked the game page should be reloaded.
 
 Happy Coding ❤️ 
+
+## Extensions to the game rock-paper-scissors: user interface improvements
+
+When the player or the computer win a winning message will appear along with a very funny GIF celebrating the victory. This plays an amusing part in the overall experience not only by making it more funny  but also by adding excitement. Next to the message and GIF is a big restart button that encourage the player to restart quickly and continue all fun. 

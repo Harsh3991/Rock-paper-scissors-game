@@ -67,7 +67,10 @@ function checkResults(playerCount, compCount) {
 function winner(winner) {
     let winnerDiv = document.createElement("div");
     winnerDiv.className = "winner";
-    winnerDiv.innerHTML = `<h1>${winner}</h1><button onclick="restartGame()">Restart</button>`;
+    
+    let gifSrc = winner === "You win!" ? "./assets/youwin.gif" : "./assets/compwin.gif";
+    
+    winnerDiv.innerHTML = `<h1>${winner}</h1><img src="${gifSrc}" alt="${winner}" style="width: 400px; height: 250px;margin-bottom: 30px;"><button onclick="restartGame()">Restart</button>`;
     document.body.appendChild(winnerDiv);
 }
 
